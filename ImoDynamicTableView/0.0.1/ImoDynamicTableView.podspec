@@ -9,24 +9,27 @@
 
 Pod::Spec.new do |s|
   s.name             = "ImoDynamicTableView"
-  s.version          = "0.1.4"
-  s.summary          = "ImoDynamicTableView"
+  s.version          = "0.0.1"
+  s.summary          = "ImoDynamicTableView is useful for working easy with tableviews and making tables with dynamic content based on cell sources (models)"
   s.description      = <<-DESC
-                       ImoDynamicTableView is useful for working easy with tableviews and making tables with dynamic content based on cell sources
+                       ImoDynamicTableView is useful for working easy with tableviews and making tables with dynamic content based on cell sources (models), with ImoDynamicTableView class you can make easy your work with tableView content and dinamicaly manipulate them.
                        DESC
   s.homepage         = "https://github.com/imodeveloper/ImoDynamicTableView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "imodeveloper" => "imodeveloperlab@gmail.com" }
-  s.source           = { :git => "https://github.com/imodeveloper/ImoDynamicTableView.git", :tag => "0.1.4" }
+  s.source           = { :git => "https://github.com/imodeveloper/ImoDynamicTableView.git", :tag => "0.0.1" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.1'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes'
+  s.source_files = 'Pod/Classes/*.*'
+
+  s.resources = 'Pod/Resources/*.*'
+
   s.resource_bundles = {
-    'ImoDynamicTableView' => ['Pod/Assets/*.png']
+    'ImoDynamicTableView' => ['Pod/Assets/*.*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
